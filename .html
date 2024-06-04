@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        object in object
+    </title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            id: 1,
+            class: 'mca',
+            city: 'hyderabad',
+            phonenumbers: [1233456789, 987654321],
+            hobbies: ['singing', 'dancing'],
+                       name: {
+                firstname: 'mahendra',
+                middlename: 'singh',
+                               lastname: 'dhoni'
+            },
+            address: {
+                       doorno:221,
+                       street:'suchitra',
+                       city:'hyd',
+                       pincode:504106,
+                       location: {
+                        lat:12.5,
+                        lon:25.2
+                       }
+            }
+        }
+        console.log(student)
+        console.log(student['hobbies'])
+        console.log(student['name']['firstname'])
+        console.log(student['address'])
+        console.log(student['address']['location']['lat'])
+    </script>
+</body>
+
+</html>

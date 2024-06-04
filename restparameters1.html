@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rest parameters</title>
+    </head>
+    <body>
+        <script>
+            function order(...items)
+            {
+               let s=0
+               for(let i=0;i<items.length;i++)
+               {
+                s=s+items[i]
+               } 
+            console.log(s)
+        
+        }
+        order(250,750)
+        order(250,750,500,625)
+        order(250,750,500,625,333,723)
+        </script>
+    </body>
+</html>

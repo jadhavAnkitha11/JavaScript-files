@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <body>
+        <script>
+            let salaries=[25000,30000,40000,60000]
+            let sum=salaries.reduce((a,b)=>a+b)
+            console.log(sum)
+            //print below 50k salaries
+            let below50k=salaries.filter((salaries)=>salaries<50000)
+            console.log(below50k)
+            //
+            let everyresult=salaries.every((salaries)=>salaries<50000)
+            console.log(everyresult)
+            //
+            let someresult=salaries.some((salaries)=>salaries<50000)
+            console.log(someresult)
+            //add bonus 3000 to salaries
+            let newsalary=salaries.map((salaries)=>salaries+3000)
+            console.log(newsalary)
+        </script>
+    </body>
+</head>

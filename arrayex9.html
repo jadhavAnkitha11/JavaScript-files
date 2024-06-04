@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        let student = { id: 1, name: 'ankitha', class: 'mca', marks: 360 }
+
+        student['age'] = 22
+        student['marks'] = 369
+        console.log(student)
+        if ('name' in student) {
+            console.log('it is alresdy existed')
+        } else {
+            student['city'] = 'hyd'
+        }
+
+        console.log(student)
+        if ('city' in student) {
+            console.log('it is alresdy existed')
+        } else {
+            student['city'] = 'hyd'
+        }
+
+        console.log(student)
+        delete student['marks']
+        console.log(student)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        let vs constfor the arryays and objects
+    </title>
+    </head>
+    <body>
+        <script>
+            let a=[1,2,3]
+            a[0]=100
+            console.log(a)     //let array can be modifiable
+            // let for objects
+            let b={fruit1:'apple',fruit2:'banana'}
+            b.fruit1='mango'
+            console.log(b)     //let object can be modifiable
+
+
+            //let check for the const
+            const a=[1,2,3]
+            a[0]=100
+            console.log(a)     //const array cannot be modifiable
+            // let for objects
+            const b={fruit1:'apple',fruit2:'banana'}
+            b.fruit1='mango'
+            console.log(b)     //const object cannot be modifiable
+
+            
+        </script>
+    </body>
+
+</html>
