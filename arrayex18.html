@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            call() 
+        </title>
+    </head>
+    <body>
+        <script>
+            let show=function(age,city){
+                console.log(`${this.id} id name is ${this.name},age is ${age},city is ${city}`)
+            }
+            let student={
+                id:1,
+                name:'Ankitha',
+               
+            }
+        
+            let employee={
+                id:101,
+                name:'jadhav',
+                
+            }
+            show.call(student,22,'hyd')
+            show.call(employee,23,'hyd')
+        </script>
+    </body>
+</html>
