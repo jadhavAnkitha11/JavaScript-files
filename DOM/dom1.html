@@ -6,15 +6,22 @@
         </title>
     </head>
     <body>
-        <p id="1" style="color:aqua;">
+        <p id="1" style="color: aqua;">
             Hello
         </p>
-        <p id="2" style="background-color: black;">
+        <p id="2">
             Hi
         </p>
     
     <script>
-        document.getElementById('p1').innerHTML='welcome';
+        //HTML manipulation
+        document.getElementById(1).innerHTML='welcome'
+        document.getElementById(2).innerHTML='Good morning'
+        //CSS Manipulation
+        document.getElementById(1).style.color='red'
+        document.getElementById(1).style.backgroundColor='black'
+        document.getElementById(2).style.color='blue'
+        document.getElementById(2).style.backgroundColor='lime'
     </script>
     </body>
 </html>

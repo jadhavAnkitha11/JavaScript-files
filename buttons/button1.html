@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>addition using inner javascript</title>
+    </head>
+    <body>
+     <input type="text" id="b1">
+     <input type="text" id="b2">
+     <button onclick="doSum()">+</button>
+     <button onclick="doSquare()">(a+b)^2</button>
+     <input type="text" id="b3">
+     <script>
+        function doSum()
+        {
+            let x=eval(document.getElementById('b1').value)
+             let y=eval(document.getElementById('b2').value)
+             let sum=eval(x)+eval(y)
+             document.getElementById('b3').value=sum
+        }
+        function doSquare()
+        {
+            let x=eval(document.getElementById('b1').value)
+             let y=eval(document.getElementById('b2').value)
+             let square=x*x+y*y+2*(x*y)
+             document.getElementById('b3').value=square
+        }
+     </script>
+     
+
+    </body>
+</html>
