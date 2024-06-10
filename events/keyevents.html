@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            keypress,keydown,keyup events
+        </title>
+        <script>
+            function key()
+            {
+                let c=document.getElementById('t1').value
+                document.getElementById('s1').innerHTML=c
+            }
+        </script>
+    </head>
+    <body>
+        Enter your name:<input type="text" id="t1" onkeyup="key()"><br>
+        your name is:<span id="s1"></span>
+    </body>
+</html>
