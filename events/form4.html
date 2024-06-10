@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          Voter Id Form
+        </title>
+        <style>
+         span{
+            color:red;
+         }
+        </style>
+        <script>
+              function fun1()
+              {
+                try{
+                let age=document.getElementById('t1').value
+                if(age=="")
+                {
+                    throw new Error('Age should not be empty');
+                   
+                }
+                if(isNaN(age))
+                {
+                    throw new Error("age should be number")
+                }
+                if(age<0)
+                {
+                    throw new Error("age should be a positive number")
+                }
+                if(age<18)
+                {
+                    throw new Error("you are not eligible to vote")
+                }
+                if(age>100)
+                {
+                    throw new Error("age should be lesser than 100")
+                }
+                else if(age>=18)
+               {
+                alert("you are eligible to vote")
+                return true
+               }
+              }
+              catch(error){
+                document.getElementById('s1').innerHTML=error.message
+                return false
+              }
+              finally{
+                document.getElementById('s2').innerHTML="Thanks for using this app"
+              }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="n1" action="ServerPage1" onsubmit="return fun1()" method="get">
+            <table>
+                <tr>
+                    <td>
+                        <label for="t1">Enter Your Age</label>
+                    
+                    </td>
+                    <td>
+                        <input type="text" id="t1" name="i1">
+                        <span id="s1">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="t2" value="validate age">
+                        <span id="s2"></span>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
